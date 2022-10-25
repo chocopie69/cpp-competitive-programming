@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int n;
+double a[1002];
+
+int main()
+{
+    cin >> n;
+    double maxNum = a[0], minNum = a[0];
+    for(int i=1;i<=n;i++)
+    {
+        cin >> a[i];
+        maxNum = max(maxNum,a[i]);
+        minNum = min(minNum,a[i]);
+    }
+    cout << fixed << setprecision(2) << maxNum << " " << minNum;
+}
